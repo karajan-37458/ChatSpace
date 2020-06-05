@@ -1,0 +1,25 @@
+.Side-bar
+  .Left-Header
+    .Left-Header__top-items
+      %h3.Left-Header__user-name
+        ユーザー名
+      %ul.Left-Header__icons
+        %li.Left-Header__Icon
+          = link_to "#" do
+            = icon('far', 'edit')
+        %li.Left-Header__Icon
+          = link_to "#" do
+            = icon('fas', 'cog')
+  .Group-list
+    .Group
+      = link_to '#' do
+        .Group__name
+          グループ名
+        .Group__message
+          まだメッセージがありません
+    .Group
+      = link_to '#' do
+        .Group__name
+          グループ名
+        .Group__message
+          まだメッセージがありません
