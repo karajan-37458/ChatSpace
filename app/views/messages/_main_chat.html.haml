@@ -2,38 +2,22 @@
   .Right-Header
     .Right-Header__group
       .Right-Header__group-name
-        グループ名
+        = @group.name
       %ul.Right-Header__group-member
         Member：
         %li.Right-Header__user-name
-          ユーザー名
-    = link_to '#', class: "Right-Header__edit-button" do
+          - @group.group_users.each do |group_user|
+            = group_user.user.name
+    = link_to edit_group_path(@group), class: "Right-Header__edit-button" do
       Edit
   .Message-list
-    .Message-box
-      .Message-username-date
-        .Message-username-date__username
-          ユーザー名
-        .Message-username-date__date
-          2019/11/20(Wed) 17:43:01
-      .Message
-        %p.Message__text
-          おはよう！
-    .Message-box
-      .Message-username-date
-        .Message-username-date__username
-          ユーザー名
-        .Message-username-date__date
-          2019/11/20(Wed) 17:43:01
-      .Message
-        %p.Message__text
-          おはよう！
+    = render partial: 'message', collection: @messages
   .Footer
-    %form.Form
+    = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
       .Form__contents
-        %input.Form__text{type: 'text', placeholder: 'type a message'}
-        %label.Form__image
+        = f.text_field :body, class: 'Form__text', placeholder: 'type a message'
+        = f.label :image, class: 'Form__image' do
           = icon('far', 'image', class: 'Form__icon')
-          %input.Hidden{type: 'file'}
-      %input.Form__send{type: 'submit', value: 'Send'}
+          = f.file_field :image, class: 'Hidden'
+      = f.submit 'Send', class: 'Form__send'
 
