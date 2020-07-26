@@ -1,3 +1,59 @@
+<h1 align="center">Chat-Space</h1>
+
+## :link: アプリケーションの概要
+<ul>
+  <li>チャットアプリケーションです。</li>
+  <li>個別のグループを作成して、ユーザー同士でチャットをする事ができます。</li>
+  <li>非同期通信でメッセージや画像をチャット形式で送信する事ができます。</li>
+</ul>
+
+## :link: アプリケーションの機能
+<ul>
+  <li>ユーザーの新規登録/ログイン機能</li>
+  <li>グループ内でのチャット機能</li>
+  <li>複数人によるグループチャット機能</li>
+  <li>チャット相手の検索機能</li>
+  <li>チャットグループへのユーザー招待機能</li>
+  <li>チャットの履歴表示機能</li>
+  <li>画像送信機能</li>
+  <li>チャットの自動更新</li>
+</ul>
+
+## :link: 開発環境
+
+<p align="center">
+  <a href="https://www.ruby-lang.org/ja/"><img src="https://user-images.githubusercontent.com/39142850/71774533-1ddf1780-2fb4-11ea-8560-753bed352838.png" width="45px;" /></a>
+  <a href="https://railsguides.jp/getting_started.html"><img src="https://kuromame-blog.com/wp-content/uploads/rails-768x432.png" height="45px;" /></a>
+  <a href="http://haml.info/"><img src="https://user-images.githubusercontent.com/39142850/71774618-b32edb80-2fb5-11ea-9050-d5929a49e9a5.png" height="45px;" /></a>
+  <a href="https://sass-lang.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/144px-Sass_Logo_Color.svg.png" height="40px;" /></a>
+  <a href="https://jquery.com/"><img src="https://syncer.jp/storage/web/brand-logos/static/dst/jquery-logo-001.png" height="45px;" /></a>
+  <a href="https://github.co.jp/"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="45px;" /></a>
+  <a href="https://aws.amazon.com/jp/"><img src="https://d0.awsstatic.com/logos/powered-by-aws.png" height="45px;" /></a>
+</p>
+
+## :globe_with_meridians: サイト紹介
+<ul>
+  <li>IPアドレス : http://176.34.16.226/</li>
+</ul>
+
+## :computer: インストール方法
+1.このリポジトリを複製
+$ git clone https://github.com/karajan-37458/Chat-Space.git
+
+2.インストールしたリポジトリに移動
+$ cd Chat-Space
+
+3.gemをアプリケーションに適用
+$ bundle install
+
+4.DBの作成&反映
+$ rails db:create
+$ rails db:migrate
+
+5.アプリケーションの起動
+$ rails s
+👉 http://localhost:3000
+
 ## :link: DB設計
 
 ## usersテーブル
