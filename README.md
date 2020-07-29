@@ -9,6 +9,11 @@
   <li>非同期通信でメッセージや画像をチャット形式で送信する事ができます。</li>
 </ul>
 
+## :globe_with_meridians: 本番環境
+<ul>
+  <li>IPアドレス : http://176.34.16.226/</li>
+</ul>
+
 ## :link: アプリケーションの機能
 <ul>
   <li>ユーザーの新規登録/ログイン機能</li>
@@ -32,11 +37,6 @@
   <a href="https://github.co.jp/"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="45px;" /></a>
   <a href="https://aws.amazon.com/jp/"><img src="https://d0.awsstatic.com/logos/powered-by-aws.png" height="45px;" /></a>
 </p>
-
-## :globe_with_meridians: サイト紹介
-<ul>
-  <li>IPアドレス : http://176.34.16.226/</li>
-</ul>
 
 ## :computer: インストール方法
 1.このリポジトリを複製
