@@ -1,5 +1,7 @@
 <h1 align="center">Chat-Space</h1>
 
+[![Image from Gyazo](https://gyazo.com/17671b9fe1492d7b4a66a3d9e2478e77.jpg)](https://gyazo.com/17671b9fe1492d7b4a66a3d9e2478e77)
+
 ## :link: アプリケーションの概要
 <ul>
   <li>チャットアプリケーションです。</li>
